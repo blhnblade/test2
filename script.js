@@ -628,6 +628,7 @@ function chatWidget(){
         for (let i = 0; i < this.mobileUserAgents.length ; i++){
           if (userAgent.includes(this.mobileUserAgents[i])) isMobile = true
         }
+        alert(isMobile)
         return isMobile
       }, 
   
