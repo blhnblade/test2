@@ -623,7 +623,7 @@ function chatWidget(){
       mobileUserAgents: ['android', 'iphone', 'ipad', 'ipod', 'windows phone', 'blackberry', 'webos', 'symbian', 'bada', 'tizen', 'kaios', 'mobile', 'silk', 'opera mini', 'opera mobi', 'chrome mobile', 'crios', 'fxios', 'ucbrowser', 'samsungbrowser', 'qqbrowser'],
   
       defineUserAgentIsMobile() {
-        const userAgent = window.navigator.userAgent
+        const userAgent = window.navigator.userAgent.toLowerCase()
         const isMobile = false
         for (let i = 0; i < this.mobileUserAgents.length ; i++){
           if (userAgent.includes(this.mobileUserAgents[i])) isMobile = true
